@@ -1,7 +1,7 @@
 const artContainer = document.querySelector('#art-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:4004/api/art`
+const baseURL = `http://localhost:4000/api/art`
 
 const artCallback = ({ data: art }) => displayArt(art)
 const errCallback = err => console.log(err)
@@ -15,30 +15,27 @@ function submitHandler(e) {
     e.preventDefault()
 
     let artist = document.querySelector('#artist')
-    let price = document.querySelector('#price')
     let rating = document.querySelector('input[name="ratings"]:checked')
     let imageURL = document.querySelector('#img')
-
+ console.log(rating)
     let bodyObj = {
         artist: artist.value,
-        price: price.value, 
         rating: rating.value, 
         imageURL: imageURL.value
     }
 
-    createART(bodyObj)
+    createArt(bodyObj)
 
     artist.value = ''
-    price.value = ''
     rating.checked = false
     imageURL.value = ''
 }
 
-function createARTCard(art) {
-    const ARTCard = document.createElement('div')
-    ARTCard.classList.add('art-card')
+function createArtCard(art) {
+    const artCard = document.createElement('div')
+    artCard.classList.add('art-card')
 
-    ARTCard.innerHTML = `<img alt='ART cover image' src=${art.imageURL} class="ART-cover-image"/>
+    artCard.innerHTML = `<img alt='ART cover image' src=${art.imageURL} class="ART-cover-image"/>
     <p class="artist">${art.artist}</p>
     <div class="btns-container">
         <button onclick="updateART(${art.id}, 'minus')">-</button>
@@ -61,4 +58,4 @@ function displayArt(arr) {
 
 form.addEventListener('submit', submitHandler)
 
-getAllAet()
+getAllArt()

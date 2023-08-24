@@ -3,23 +3,18 @@ const cors= require('cors')
 const db = require('./db')
 const seed = require('./seed')
 
+
 const app = express()
 app.use(express.json())
 app.use(cors())
 
-const {
-    getArt,
-    deleteArt, 
-    createArt, 
-    updateArt,
-   
+const {createArt, getArt, deleteArt, updateArt}  =require('./controller')
 
-} = require('./controller.js')
-
-app.get(`/api/art`, getArt)
-app.delete(`/api/art/:id`, deleteArt)
-app.post(`/api/art`, createArt)
-app.put(`/api/art/:id`, updateArt)
+app.post('/api/seed', seed)
+app.get('/api/art', getArt)
+app.delete('/api/:id', deleteArt)
+app.post('/api/art', createArt)
+app.put('/api/art/:id', updateArt)
 
 
 //db.sync()
