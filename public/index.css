@@ -4,7 +4,10 @@ body, html {
   
   * {
     box-sizing: border-box;
+    font-family: cursive;
+    text-align: center;
   }
+
   
   .bg-image {
     /* The image used */
@@ -64,6 +67,7 @@ button{
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  
 }
 
 /* The navigation menu links */
@@ -73,6 +77,7 @@ button{
   font-size: 25px;
   color: #818181;
   display: block;
+  
 }
 
 /* When you mouse over the navigation links, change their color */

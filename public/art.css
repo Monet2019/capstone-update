@@ -1,19 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
+    text-align: center;
 }
 
 body {
     background-color: #232323;
     background: url('green.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 header {
-    height: 80px; 
+    height: 90px; 
     display: flex; 
     justify-content: center; 
     align-items: center;
     color: blanchedalmond;
+    
+    
 }
 
 main {
