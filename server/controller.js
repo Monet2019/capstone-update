@@ -3,12 +3,14 @@ const CONNECTION_STRING = process.env.CONNECTION_STRING
 const {Sequelize} = require('sequelize')
 const db = new Sequelize(CONNECTION_STRING)
 
-module.exports = db
+//module.exports = db
 
 const art = require('./db.json')
 let globalId = 56;
 
-    module.exports = {
+    
+module.exports = {
+    db,
         getArt: (req, res) => {
             res.status(200).send(art)
         },

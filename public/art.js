@@ -35,11 +35,11 @@ function createArtCard(art) {
     const artCard = document.createElement('div')
     artCard.classList.add('art-card')
 
-    artCard.innerHTML = `<img alt='ART cover image' src=${art.imageURL} class="ART-cover-image"/>
+    artCard.innerHTML = `<img alt='Art cover image' src=${art.imageURL} class="ART-cover-image"/>
     <p class="artist">${art.artist}</p>
     <div class="btns-container">
         <button onclick="updateArt(${art.id}, 'minus')">-</button>
-        <p class="Art-price">$${art.price}</p>
+        <p class="Art-rating">${art.rating}</p>
         <button onclick="updateArt(${art.id}, 'plus')">+</button>
     </div>
     <button onclick="deleteArt(${art.id})">delete</button>

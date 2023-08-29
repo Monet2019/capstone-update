@@ -1,4 +1,4 @@
-const db = require('./controller.js')
+const {db} = require('./controller.js')
 
 
 const seed = () => {

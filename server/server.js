@@ -12,7 +12,7 @@ const {createArt, getArt, deleteArt, updateArt}  =require('./controller')
 
 app.post('/api/seed', seed)
 app.get('/api/art', getArt)
-app.delete('/api/:id', deleteArt)
+app.delete('/api/art/:id', deleteArt)
 app.post('/api/art', createArt)
 app.put('/api/art/:id', updateArt)
 
