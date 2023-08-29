@@ -35,7 +35,7 @@ function createArtCard(art) {
     const artCard = document.createElement('div')
     artCard.classList.add('art-card')
 
-    artCard.innerHTML = `<img alt='Art cover image' src=${art.imageURL} class="ART-cover-image"/>
+    artCard.innerHTML = `<img alt='Art cover image' src=${art.imageURL} class="Art-cover-image"/>
     <p class="artist">${art.artist}</p>
     <div class="btns-container">
         <button onclick="updateArt(${art.id}, 'minus')">-</button>

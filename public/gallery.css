@@ -23,9 +23,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('green.jpeg');
-  background-size: cover;
-  background-position: center;
+  background: url('bg.jpg');
+  background-size: contain;
   font-family: 'roboto', sans-serif;
 }
 
