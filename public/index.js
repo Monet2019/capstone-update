@@ -1,4 +1,4 @@
 function myFunction() {
-    window.location.href = "login.html";
+    window.location.href = "about.html";
 }
 
