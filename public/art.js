@@ -38,11 +38,11 @@ function createArtCard(art) {
     artCard.innerHTML = `<img alt='ART cover image' src=${art.imageURL} class="ART-cover-image"/>
     <p class="artist">${art.artist}</p>
     <div class="btns-container">
-        <button onclick="updateART(${art.id}, 'minus')">-</button>
-        <p class="ART-price">$${art.price}</p>
-        <button onclick="updateART(${art.id}, 'plus')">+</button>
+        <button onclick="updateArt(${art.id}, 'minus')">-</button>
+        <p class="Art-price">$${art.price}</p>
+        <button onclick="updateArt(${art.id}, 'plus')">+</button>
     </div>
-    <button onclick="deleteART(${art.id})">delete</button>
+    <button onclick="deleteArt(${art.id})">delete</button>
     `
 
 
