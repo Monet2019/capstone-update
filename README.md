@@ -1,6 +1,6 @@
-# The Curator's Canvas
+# Thee Curator's Canvas
 
-"The Curator's Canvas" is an application designed with the purpose of allowing users to virtually view art pieces and provide ratings for each artwork. This application provides a user-friendly interface where users can explore a collection of art entries, view images of the artworks, and assign ratings based on their preferences. The application's design aims to simulate the experience of visiting an art gallery or exhibition, but in a digital and virtual environment. Users can interact with the displayed art, rate them, and potentially engage in other actions like adding new art pieces or updating existing ones. The intention is to create an engaging and interactive platform for art enthusiasts to appreciate and interact with various artworks.
+"Thee Curator's Canvas" is an application designed with the purpose of allowing users to virtually view art pieces and provide ratings for each artwork. This application provides a user-friendly interface where users can explore a collection of art entries, view images of the artworks, and assign ratings based on their preferences. The application's design aims to simulate the experience of visiting an art gallery or exhibition, but in a digital and virtual environment. Users can interact with the displayed art, rate them, and potentially engage in other actions like adding new art pieces or updating existing ones. The intention is to create an engaging and interactive platform for art enthusiasts to appreciate and interact with various artworks.
 
 
 ![Website pic](https://github.com/Monet2019/capstone-update/assets/139166047/202c1458-7483-4b58-a823-2c6adae3b4f0)
